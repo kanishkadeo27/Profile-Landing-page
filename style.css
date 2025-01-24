@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #34495e;
+  --bg-color: #ecf0f1;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.profile-card {
+  width: 70%;
+  display: flex;
+  border: 2px solid gray;
+  border-radius: 15px;
+  box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.52);
+}
+
+.profile-sidebar {
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: var(--white);
+  flex: 1;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgb(4, 38, 79);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.resume {
+  text-decoration: none;
+  background-color: rgb(4, 38, 79);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.resume:hover {
+  background-color: rgb(34, 34, 57);
+}
+
+.profile-main-content {
+  flex: 2;
+  padding: 30px;
+  margin: 10px;
+}
+
+.profile-desc {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #616161;
+}
+
+.profile-email {
+  margin-bottom: 18px;
+  color: #616161;
+}
+
+.social-links {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.icons {
+  font-size: 25px;
+  color: var(--accent-color);
+}
+
+.icons:hover {
+  color: rgb(39, 14, 79);
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skills-heading {
+  font-size: 35px;
+  color: rgb(4, 38, 79);
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.my-skill {
+  background-color: rgb(87, 148, 223);
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.button-to-profile {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-to-profile:hover {
+  background-color: rgb(232, 7, 37);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    width: 100%;
+    flex-direction: column;
+    /* margin-top: 150px; */
+  }
+  .profile-main-content {
+    margin: 0;
+  }
+}
